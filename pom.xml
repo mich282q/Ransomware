@@ -26,32 +26,34 @@
     <artifactId>commons-io</artifactId>
     <version>2.6</version>
     <name>Apache Commons IO</name>
-
     <inceptionYear>2002</inceptionYear>
     <description>
-        The Apache Commons IO library contains utility classes, stream implementations, file filters,
-        file comparators, endian transformation classes, and much more.
+        The Apache Commons IO library contains utility classes, stream implementations, file filters, file comparators, endian transformation classes, and much more.
     </description>
-
     <url>http://commons.apache.org/proper/commons-io/</url>
-
     <issueManagement>
         <system>jira</system>
         <url>http://issues.apache.org/jira/browse/IO</url>
     </issueManagement>
-
     <distributionManagement>
         <site>
             <id>apache.website</id>
             <name>Apache Commons Site</name>
-            <url>scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-io/</url>
+            <url>
+                scm:svn:https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-io/
+            </url>
         </site>
     </distributionManagement>
-
     <scm>
-        <connection>scm:git:http://git-wip-us.apache.org/repos/asf/commons-io.git</connection>
-        <developerConnection>scm:git:https://git-wip-us.apache.org/repos/asf/commons-io.git</developerConnection>
-        <url>https://git-wip-us.apache.org/repos/asf?p=commons-io.git</url>
+        <connection>
+            scm:git:http://git-wip-us.apache.org/repos/asf/commons-io.git
+        </connection>
+        <developerConnection>
+            scm:git:https://git-wip-us.apache.org/repos/asf/commons-io.git
+        </developerConnection>
+        <url>
+            https://git-wip-us.apache.org/repos/asf?p=commons-io.git
+        </url>
         <tag>commons-io-2.6</tag>
     </scm>
 
@@ -248,7 +250,7 @@
         <commons.componentid>io</commons.componentid>
         <commons.module.name>org.apache.commons.io</commons.module.name>
         <commons.rc.version>RC1</commons.rc.version>
-        <commons.release.version>2.6</commons.release.version>
+        <commons.release.version>2.5</commons.release.version>
         <commons.release.desc>(requires JDK 1.7+)</commons.release.desc>
         <commons.jira.id>IO</commons.jira.id>
         <commons.osgi.export>
