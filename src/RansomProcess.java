@@ -105,6 +105,7 @@ public class RansomProcess {
 
             }
 //hvis der opstå en fejl som er en af dem som er lavet en catch på så stopper den koden og skriver fejlen ud
+            //hvis der opstå en fejl med printStackTrace printer den bare den samme Exception ud.
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (SQLException e) {
